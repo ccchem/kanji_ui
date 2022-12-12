@@ -39,7 +39,7 @@ public class RadicalPanel extends JPanel implements KeyListener
     {
         super();
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-        setBackground(cfg.labelBG);
+        //setBackground(cfg.labelBG);
 
         undoMgr = new UndoManager();
         undoMgr.setLimit(20);
@@ -49,7 +49,7 @@ public class RadicalPanel extends JPanel implements KeyListener
         txtInput.addKeyListener(this);
         //txtInput.getActionMap().put(DefaultEditorKit.deletePrevCharAction, new CustomTextActions.DeletePrevCharAction());
         txtInput.setFont(cfg.textFont);
-//        txtInput.setBackground(cfg.textBG);
+        txtInput.setBackground(cfg.textBG);
 //        txtInput.setForeground(cfg.textFG);
         txtInput.setBorder(new EmptyBorder(10, 5, 10, 5));
         txtInput.setAlignmentX(LEFT_ALIGNMENT);

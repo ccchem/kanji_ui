@@ -40,10 +40,12 @@ public class Main
 	{
 		UISettings cfg = new UISettings();
 		
-		Font[] fonts = loadFont("TakaoGothic.ttf");
-        cfg.textFont = fonts[0].deriveFont(50.0f);
-        cfg.helpFont = fonts[0].deriveFont(50.0f);
-        cfg.labelFont = fonts[0].deriveFont(40.0f);
+		//Font[] fonts = loadFont("TakaoGothic.ttf");
+        //cfg.textFont = fonts[0].deriveFont(70.0f);
+        //cfg.helpFont = fonts[0].deriveFont(50.0f);
+        //cfg.labelFont = fonts[0].deriveFont(40.0f);
+        
+        cfg.labelFont = new Font("NotoSansCJK-Regular", Font.PLAIN, 50);
 
 		UIManager.setLookAndFeel( new FlatDarkLaf());
 		JFrame.setDefaultLookAndFeelDecorated(true);
